@@ -44,11 +44,7 @@ Summarize what I've learned in software engineering on this page.
 - There can be one or more target files to commit
 - The user is free to determine the unit of commit
 
-```mermaid
-graph LR
-  Start[File ver.0]-->|Commit|End[File ver.1]
-
-```
+![alt text](git_file_version.jpg)
 
 ### Branch
 
@@ -58,24 +54,8 @@ graph LR
 
 ### Flow in local repository
 
-```mermaid
-flowchart LR
+![alt text](flow_in_local.jpg)
 
-subgraph Git directory
-subgraph Staging area
-c0[Corrected file]
-end
-b0[Corrected file]
-end
-
-subgraph Worktree
-a0[File] -->|Ctrl+s|a1[Corrected file]
-end
-
-a1 -->|git add|c0
-c0 -->|git commit|b0
-
-```
 #### Worktree  
 - There are three states of files  
  1.untracked  
