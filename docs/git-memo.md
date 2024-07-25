@@ -8,7 +8,24 @@ permalink: /docs/git-memo
 
 Summarize what I've learned in software engineering on this page.
 
+## About software and software engineering
+
+### Software definition
+- A set of insruction words that, when executed, provide the required characteristics, functions, and performance.
+- Data structures that allow programs to handle information appropriately.
+- Information describing the operation and use of the program
+### Software features
+- Must adanpt to meet the needs of new environments and technologies.
+- Must be enhanced to meet new business demand
+- Must be extended to interoperate with more modern systems and databases.
+***
+### Definition of Software Engineering
+&nbsp; "The application of a sustematic, disciplined, and quantifiable approach to software development, operation, and maintenance, that is the application of engineering to software."
+***
+
+***
 ## About git
+***
 
 &nbsp; git is a distributed version control system, originally software for open source software management.  
 &nbsp; git has the following advantages:
