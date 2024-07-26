@@ -17,15 +17,64 @@ Summarize what I've learned in software engineering on this page.
 ### Software features
 - Must adanpt to meet the needs of new environments and technologies.
 - Must be enhanced to meet new business demand
-- Must be extended to interoperate with more modern systems and databases.
+- Must be extended to interoperate with more modern systems and databases.  
+
 ***
 ### Definition of Software Engineering
 &nbsp; "The application of a sustematic, disciplined, and quantifiable approach to software development, operation, and maintenance, that is the application of engineering to software."
 ***
 
+Software engineering is needed for the following reasons.
+1. Large scale and Complexity
+2. Lack of IT personel
+3. Social and required missions
+4. Increased uncertainty
+
+***
+## System Development Flow  
+Requirement Definition -> Design -> Modification -> Testing
+
+### requirements definition
+- System objectives
+- System overview
+- System function
+- System configuration (system configuration diagram, software block diagram)
+- Target performance
+- Interface specifications with other system
+- Operational considerations
+- Restrictions
+- Expandability
+- Development schedule
+- Development system
+- Deliverables
+
+### Design
+- From requirements definition document to design document
+- Reduce to a specification at a level where coding can be done
+  - Classes, Modules
+- WBS (Work Breakdown Structure)
+
+### Modification
+- System construction according to design decuments in-house - - - In-house production (in-house development)
+  - Some functions may be purchased as a package of function or outsourced
+- Procurement
+  - Outsource development
+  - Include source code in deliverables or not
+    - If included
+      - Maintenance can be done in-house
+    - If not included
+      - Maintenance must be outsourced
+
+### Testing & Debug
+- No software without bugs (should be considered)
+- Ideally, software should be tested in advance to detect and deal with bugs as early as possible
+- It's impossible to test everything (man-hours are limited)
+  - Which parts of the software should be tested?
+  - How much to test?
+    - Do we debug all the way into dasses and functions?
+
 ***
 ## About git
-***
 
 &nbsp; git is a distributed version control system, originally software for open source software management.  
 &nbsp; git has the following advantages:
