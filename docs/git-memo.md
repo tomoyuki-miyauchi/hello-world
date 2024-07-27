@@ -211,10 +211,136 @@ Merit:
 
 
 ## UML
+UML:  
+Illustrate development and design in addition to written documentation
+
+### Use Case Diagram
+- Actor
+  - A person or thing that takes action externally
+- Use Case
+  - Behavior inside the system
+- Related
+  - Use case interrelationships are represented by <<include>><<expand>>.
+  - <<iclude>>: inclusion
+  - <<expand>> or <<extend>>: Use other use cases with extended conditions
+- System Boundaries
+  - Indicates the scope of the system
+
+### Activity Diagram
+- Describes what is being done inside the system
+- Describes what process is used to realize each use case
+- Action node: Rectangle with rounded corners
+  - Equivalent to a task
+- Arrows
+  - Indicates the direction of the control flow
+- Initial node (start node)
+  - Black circle
+  - Start point of activity
+- Final node (end node)
+  - End point of activity
+- Fork
+  - Black thick line
+  - Represents asynchronous branching
+- Joins
+  - Diamond
+  - Synchronize parallel control flows such as conditional branching and integration
+
+### Class Diagram
+- Object Oriented Model
+- Class
+  - Abstraction “object
+  - Defined object type
+- Object
+  - Concretization
+  - Instances are objectified based on classes
+- An object that is materialized by data in a class
+- Attribute
+  - Attribute A characteristic that a class possesses
+- Operation
+  - Processes that the class
+
+### Object Diagram
+- A class with its contents in it.
+  - Can verify multiplicity between classes
+- Intermediate product for creating class diagrams
+
+### Sequence Diagram
+- Can express the relationship between time and timing.
+
+### Communication Diagram
+- A rewritten version of Sequence Diagram
+- Communication diagram can express connection forms and network configurations using communication links.
+
+### Timing Diagram
+- A representation of the timing of interactions and state transitions between objects
+
+### Interaction overview diagram (iod)
+- Bird's-eye view of the system
+- sd: sequence diagram
+- cd: communication diagram
+- td: timing diagram
+- Activity diagram with these interactions as actions
+
+### Component Diagram
+- Component: One or more interfaces are provided for a process that consists of multiple classes and is treated as if it were a single class.
+- Diagrams for managing encapsulated software parts
+- A “component” is represented by a tagged icon
+- Requirement interface
+  - Request interface Interface that makes a service request to a component
+- Provider interface
+  - Interface that provides services to a component
+
+### Package Diagram
+- Extract classes that are “package” in the class diagram
+- Express and manage package dependencies
+
+### State Machine Diagram
+- Expresses state transitions of objects by triggers
+
+### Deployment Diagram
+- Deployment diagram Representation of hardware configuration
+
+
+## Coding
+Code is read more often than it is written. Therefore, it is essential to write readable code for software development.
+Example: Python PEP8
+- Length of a line
+  - 79 characters or less; docstrings and comments should be 72 characters or less.
+  - When continuing a line, folded elements should be aligned vertically.
+- Layout
+  - Use four spaces for every one level of indentation
+- Spaces
+  - One space before and after each operator
+  - No unnecessary spaces
+- Line breaks
+  - Do not overlap minutes
+  - Align operators
+- import precedence
+  1. standard library
+  2. related to third vertices
+  3. specific to local applications/libraries
+- Comment
+  - Do not write comments that contradict code
+  - Keep comments clean when code is changed
+  - Write comments in multiple complete minutes
+  - Capitalize the first word.
+  - Block comments generally consist of one or more paragraphs
+  - Paragraphs are made up of multiple complete sentences.
+  - Each sentence ends with a period.
+  - If a comment consists of two or more sentences, there should be two spaces after the period at the end of each sentence except for the last sentence.
+  - Comments should be written in a way that is clear and understandable to speakers of other languages.
+- Naming Conventions
+  - Packages: short names in all lowercase, no underscores.
+  - Modules: short lower-case names in the illustration hand, separated by underscores
+  - Classes and exceptions: capitalize only the first letter, no underscores.
+  - Functions, methods: lowercase only, separate words with underscore if necessary
+  - Constants: uppercase only, separate words with underscore
+  - Variables, arguments: lowercase only, separate words with underscore if necessary
+  - Single letter variables: never use l (lower case L), O (upper case O), or I (upper case I).
 
 
 ***
-## About git
+## Git
 
 &nbsp; git is a distributed version control system, originally software for open source software management.  
 &nbsp; git has the following advantages:
@@ -365,3 +491,61 @@ The main commands used in git are following:
         <dd>Upload changes</dd>
 </dl>
 </details>
+
+
+## CI/CD
+### Continuous Integration (CI)
+- The process of frequently integrating code changes into a shared repository.
+- Automated tests and builds are run regularly, enabling early detection and correction of bugs
+- CI automation facilitates smooth development progress
+### Continuous Delivery (CD)
+- The process of automatically deploying code changes to test and production environments
+- Built-in automated deployment eliminates the need for manual deployment
+- CD allows for rapid feedback from users
+
+### Basic steps of a CI/CD pipeline
+1. <strong>source: </strong>Trigger workflow with code changes
+2. <strong>Build: </strong>Compile source code
+3. <strong>Test: </strong>Run automated tests
+4. <strong>Deploy: </strong>Deploy tested code to production environment
+5. <strong>Verify: </strong>Verify the behavior of the deployed application
+6. <strong>Monitoring</strong>: Continuous monitoring in the production environment
+
+
+##test procedure
+
+### Software Testing
+- Black Box Testing
+  - Addressing internal processes as a black box
+    - Is an integer supposed to be the return value, but a floating point is not returned?
+    - If the input value is 1~10, but 100 is entered, what kind of error will occur?
+- White box testing
+  - Tests performed while looking at the contents
+    - Program examination
+
+## Debugging
+Debugging: removing bugs
+- Reactive approach
+   - Dealing with bugs after they are found
+- Proactive approach
+  - Dealing with bugs before they are found
+
+### PDCA
+- Plan
+  - Set goals and objectives, and develop an action plan
+- Do
+  - Execute the plan
+- Check
+  - Check Verification of execution
+- Action
+  - Consideration of improvement based on verification results
+
+### OODA
+- Observe
+  - Observe Observe Observe Observe Observe Observe Observe Observe Observe Observe Observe
+- Observe Orient
+  - Determine the direction of what should be done now
+- Decide
+  - Prepare for specific actions
+- Act
+  - Execute based on the decisions made
