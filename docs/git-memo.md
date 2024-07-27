@@ -22,7 +22,6 @@ Summarize what I've learned in software engineering on this page.
 ***
 ### Definition of Software Engineering
 &nbsp; "The application of a sustematic, disciplined, and quantifiable approach to software development, operation, and maintenance, that is the application of engineering to software."  
-***
 
 Software engineering is needed for the following reasons.
 1. Large scale and Complexity
@@ -93,6 +92,8 @@ Features of project
   - Need to set clear goals
   - Need to consider the path toward the goal
 
+![alt text](For_Backcasting.jpg)
+
 <strong>Project -> Backcasting</strong>
 
 ## Software Evaluation
@@ -110,23 +111,23 @@ Software Evaluation = Measuring value
     - Rough estimate -> design specifications -> re-estimate -> estimate system size
     - The system scale can also be used as an indicator for investment decision making, such comparing the scale of different systems when procuring a system, and whether to develop a new sysstem or purchase a new one  
 
-FP balue = base value * (0.65 + adjusted value / 100)
-Cost = FP value * work unit * conversion value
+4. Ease of use  
+  1) Screen visibility  
+  2) Operability  
+  3) INput assistance  
+  4) Compatibility  
+  5) Guidance  
 
-4. Ease of use
-  1) Screen visibility
-  2) Operability
-  3) INput assistance
-  4) Compatibility
-  5) Guidance
+<strong>FP balue = base value * (0.65 + adjusted value / 100)</strong>  
+<strong>Cost = FP value * work unit * conversion value</strong>
 
 ### Bug Incidence Rate
 Number of bugs per step (number of lines of code excluding openings)
 
-Example)
+Example)  
 100 tests are performed on 100 steps of software and 10 bugs are generated  
 <strong>Bug occurrence rate1 = 10 (bugs) / 100 (steps) = 0.1 (bugs / steps)</strong>  
-Additional 50 tests are performed and 5 bugs occur
+Additional 50 tests are performed and 5 bugs occur  
 <strong>Bug rate2 = 15 (bugs) / 100 (steps) = 0.15 (bugs / steps)</strong>  
 
 Bug incidence rate is one indicator of software quality evaluation
@@ -136,10 +137,14 @@ Bug incidence rate is one indicator of software quality evaluation
 - Easy to manage progress, clear deliverables
 - There is a risk of concentration of work on the back end of the process
 
+![alt text](waterfall.jpg)
+
 ### Spiral model
 - Program development is divided into small phases
 - Demonstration by prototype->feedback for each phase
 - There is a risk of unexpected workload in prototyping
+
+![alt text](spiral.jpg)
 
 ### Iterative development process
 - Software is divided into functional units, which are managed in units called “iterations
@@ -226,6 +231,8 @@ Illustrate development and design in addition to written documentation
 - System Boundaries
   - Indicates the scope of the system
 
+![alt text](usecase.jpg)
+
 ### Activity Diagram
 - Describes what is being done inside the system
 - Describes what process is used to realize each use case
@@ -245,6 +252,8 @@ Illustrate development and design in addition to written documentation
   - Diamond
   - Synchronize parallel control flows such as conditional branching and integration
 
+![alt text](activity.jpg)
+
 ### Class Diagram
 - Object Oriented Model
 - Class
@@ -259,6 +268,8 @@ Illustrate development and design in addition to written documentation
 - Operation
   - Processes that the class
 
+![alt text](class.jpg)
+
 ### Object Diagram
 - A class with its contents in it.
   - Can verify multiplicity between classes
@@ -267,12 +278,18 @@ Illustrate development and design in addition to written documentation
 ### Sequence Diagram
 - Can express the relationship between time and timing.
 
+![alt text](sequence.jpg)
+
 ### Communication Diagram
 - A rewritten version of Sequence Diagram
 - Communication diagram can express connection forms and network configurations using communication links.
 
+![alt text](communication.jpg)
+
 ### Timing Diagram
 - A representation of the timing of interactions and state transitions between objects
+
+![alt text](timing.jpg)
 
 ### Interaction overview diagram (iod)
 - Bird's-eye view of the system
@@ -280,6 +297,8 @@ Illustrate development and design in addition to written documentation
 - cd: communication diagram
 - td: timing diagram
 - Activity diagram with these interactions as actions
+
+![alt text](iod.jpg)
 
 ### Component Diagram
 - Component: One or more interfaces are provided for a process that consists of multiple classes and is treated as if it were a single class.
@@ -290,15 +309,23 @@ Illustrate development and design in addition to written documentation
 - Provider interface
   - Interface that provides services to a component
 
+![alt text](component.jpg)
+
 ### Package Diagram
 - Extract classes that are “package” in the class diagram
 - Express and manage package dependencies
 
+![alt text](package.jpg)
+
 ### State Machine Diagram
 - Expresses state transitions of objects by triggers
 
+![alt text](statemachine.jpg)
+
 ### Deployment Diagram
 - Deployment diagram Representation of hardware configuration
+
+![alt text](deployment.jpg)
 
 
 ## Coding
@@ -497,11 +524,13 @@ The main commands used in git are following:
 ### Continuous Integration (CI)
 - The process of frequently integrating code changes into a shared repository.
 - Automated tests and builds are run regularly, enabling early detection and correction of bugs
-- CI automation facilitates smooth development progress
+- CI automation facilitates smooth development progress  
 ### Continuous Delivery (CD)
 - The process of automatically deploying code changes to test and production environments
 - Built-in automated deployment eliminates the need for manual deployment
 - CD allows for rapid feedback from users
+
+![alt text](CI_CD.jpg)
 
 ### Basic steps of a CI/CD pipeline
 1. <strong>source: </strong>Trigger workflow with code changes
@@ -512,7 +541,7 @@ The main commands used in git are following:
 6. <strong>Monitoring</strong>: Continuous monitoring in the production environment
 
 
-##test procedure
+## test procedure
 
 ### Software Testing
 - Black Box Testing
@@ -540,6 +569,8 @@ Debugging: removing bugs
 - Action
   - Consideration of improvement based on verification results
 
+![alt text](PDCA.jpg)
+
 ### OODA
 - Observe
   - Observe Observe Observe Observe Observe Observe Observe Observe Observe Observe Observe
@@ -549,3 +580,5 @@ Debugging: removing bugs
   - Prepare for specific actions
 - Act
   - Execute based on the decisions made
+
+![alt text](OODA.jpg)
