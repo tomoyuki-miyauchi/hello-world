@@ -21,7 +21,7 @@ Summarize what I've learned in software engineering on this page.
 
 ***
 ### Definition of Software Engineering
-&nbsp; "The application of a sustematic, disciplined, and quantifiable approach to software development, operation, and maintenance, that is the application of engineering to software."
+&nbsp; "The application of a sustematic, disciplined, and quantifiable approach to software development, operation, and maintenance, that is the application of engineering to software."  
 ***
 
 Software engineering is needed for the following reasons.
@@ -72,6 +72,146 @@ Requirement Definition -> Design -> Modification -> Testing
   - Which parts of the software should be tested?
   - How much to test?
     - Do we debug all the way into dasses and functions?
+
+***
+## What is "Project"?
+Features of project
+- Definite period or characteristic
+  - The kind of work that always has an end
+- Uniqueness
+  - The kind of work that achiebes a unique goal
+
+### Forcasting or Backcasting
+- Forcasting
+  - Input perspective (how much did you do?)
+  - Advancing to the goal in order from where we stand now
+  - There is a possibility that the goal will not be reached
+  - May reach the goal and far from it
+- Backcasting
+  - Output perspective (what was accomplished?)
+  - Plan what is needed to achieve the goals you hhave set and work toward achieving them
+  - Need to set clear goals
+  - Need to consider the path toward the goal
+
+<strong>Project -> Backcasting</strong>
+
+## Software Evaluation
+Software Evaluation = Measuring value
+
+1. Quantity of code (number of steps)
+  - Number of lines of source code in terms of specific language (total number of steps)
+  - If multiple languages are mixed, they need to be converted
+
+2. Quantity of code (object capacity)
+  - Smaller size is better for embedded software
+
+3. Function point (FP) method
+  - The system size can be estimated when user requirements are defined and necessary function are ientified befor entering the programming phase
+    - Rough estimate -> design specifications -> re-estimate -> estimate system size
+    - The system scale can also be used as an indicator for investment decision making, such comparing the scale of different systems when procuring a system, and whether to develop a new sysstem or purchase a new one  
+
+FP balue = base value * (0.65 + adjusted value / 100)
+Cost = FP value * work unit * conversion value
+
+4. Ease of use
+  1) Screen visibility
+  2) Operability
+  3) INput assistance
+  4) Compatibility
+  5) Guidance
+
+### Bug Incidence Rate
+Number of bugs per step (number of lines of code excluding openings)
+
+Example)
+100 tests are performed on 100 steps of software and 10 bugs are generated  
+<strong>Bug occurrence rate1 = 10 (bugs) / 100 (steps) = 0.1 (bugs / steps)</strong>  
+Additional 50 tests are performed and 5 bugs occur
+<strong>Bug rate2 = 15 (bugs) / 100 (steps) = 0.15 (bugs / steps)</strong>  
+
+Bug incidence rate is one indicator of software quality evaluation
+
+## Development process
+### Waterfall development process
+- Easy to manage progress, clear deliverables
+- There is a risk of concentration of work on the back end of the process
+
+### Spiral model
+- Program development is divided into small phases
+- Demonstration by prototype->feedback for each phase
+- There is a risk of unexpected workload in prototyping
+
+### Iterative development process
+- Software is divided into functional units, which are managed in units called “iterations
+Advantages
+  - Easy to incorporate customer requirements because software is completed in parts
+  - Partial delivery is possible
+Disadvantages
+  - Increased work and management tasks due to division
+  - Difficult to see the whole picture
+  - For a system that operates in a batch, it becomes meaningless to split the system.
+
+### Agile Process
+- Consider “tolerance” of engineers
+- Priority is given to providing software that works in an optimal manner by responding to changes and eliminating waste
+- Delays decisions as long as possible” and ‘delivers as quickly as possible,’ which were not envisioned in the waterfall development process
+- Eliminate waste by increasing motivation and learning effectiveness
+
+#### The Value of Agile
+- Individuals and interactions rather than processes and tools
+- Moving software rather than easy-to-understand documentation
+- Collaboration with customers rather than contractual gamesmanship
+- Adaptability to change rather than rigid adherence to a plan
+
+#### Agile Concepts
+- Acceptance of change
+- Fast cycles/frequent deliveries
+- Simple design
+- Refactoring
+- Pair programming
+- Retrospective
+- Tacit knowledge
+- Test-driven development
+
+#### 12 Principles of Agile Development
+1. reaching customer satisfaction through early and continuous delivery of software is paramount.
+2. be willing to change requirements, even at the end of the development process. Agile processes control change for the customer's competitive advantage.
+3. deliver software in cycles of weeks to months, the shorter the better.
+4. business people and developers must collaborate daily throughout the project.
+5. Organize the project around highly motivated developers. Give them the necessary environment and support, and trust that they will complete the task.
+6. the most efficient and effective means of communication, both inside and outside the development team, is face to face
+7. working software is the primary means of tracking progress.
+Agile software development encourages sustainable development. Funders, developers, and users should always keep a steady pace. 9. agility is improved by constant attention to technical competence and good design.
+10. brevity in not doing what is unnecessary is essential.
+11. modern architectures, requirements, and designs emerge from self-organized teams.
+12. Periodically, teams harmonize and adjust the way they develop, thinking of ways to be more effective.
+
+Development methods are one-size-fits-all, and it is essential to have project management skills to identify and determine the most effective method depending on the situation and requirements. In addition, there are many hybrid methods that combine these methods.
+
+
+## WBS (Work Breakdown Structure)
+<strong>WBS: A hierarchical elemental decomposition of the work performed by the project team to achieve the project goals and produce the required elemental deliverables, with the elemental deliverables as the main elements.</strong>  
+Merit:
+- Scope clarification
+- Identify the work to be done
+- Overall management and work plan are clarified
+- During project implementation, only execute according to the WBS
+
+### How to create WBS
+- Clarify the Scope
+  - Top-down approach
+  - Backcasting
+- Grouping large tasks
+  - Example: data collection, data analysis, visualization
+- Consider interrelationships among grouped tasks
+  - Analyze after data collection
+  - ≠Do not collect data after analyzing data
+- Identify the tasks in each grouping
+  - No duplication of work
+
+
+## UML
+
 
 ***
 ## About git
