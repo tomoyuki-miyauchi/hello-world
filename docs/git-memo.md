@@ -22,7 +22,6 @@ Summarize what I've learned in software engineering on this page.
 ***
 ### Definition of Software Engineering
 &nbsp; "The application of a sustematic, disciplined, and quantifiable approach to software development, operation, and maintenance, that is the application of engineering to software."  
-***
 
 Software engineering is needed for the following reasons.
 1. Large scale and Complexity
@@ -110,23 +109,23 @@ Software Evaluation = Measuring value
     - Rough estimate -> design specifications -> re-estimate -> estimate system size
     - The system scale can also be used as an indicator for investment decision making, such comparing the scale of different systems when procuring a system, and whether to develop a new sysstem or purchase a new one  
 
-FP balue = base value * (0.65 + adjusted value / 100)
-Cost = FP value * work unit * conversion value
+4. Ease of use  
+  1) Screen visibility  
+  2) Operability  
+  3) INput assistance  
+  4) Compatibility  
+  5) Guidance  
 
-4. Ease of use
-  1) Screen visibility
-  2) Operability
-  3) INput assistance
-  4) Compatibility
-  5) Guidance
+<strong>FP balue = base value * (0.65 + adjusted value / 100)</strong>  
+<strong>Cost = FP value * work unit * conversion value</strong>
 
 ### Bug Incidence Rate
 Number of bugs per step (number of lines of code excluding openings)
 
-Example)
+Example)  
 100 tests are performed on 100 steps of software and 10 bugs are generated  
 <strong>Bug occurrence rate1 = 10 (bugs) / 100 (steps) = 0.1 (bugs / steps)</strong>  
-Additional 50 tests are performed and 5 bugs occur
+Additional 50 tests are performed and 5 bugs occur  
 <strong>Bug rate2 = 15 (bugs) / 100 (steps) = 0.15 (bugs / steps)</strong>  
 
 Bug incidence rate is one indicator of software quality evaluation
@@ -497,7 +496,7 @@ The main commands used in git are following:
 ### Continuous Integration (CI)
 - The process of frequently integrating code changes into a shared repository.
 - Automated tests and builds are run regularly, enabling early detection and correction of bugs
-- CI automation facilitates smooth development progress
+- CI automation facilitates smooth development progress  
 ### Continuous Delivery (CD)
 - The process of automatically deploying code changes to test and production environments
 - Built-in automated deployment eliminates the need for manual deployment
@@ -512,7 +511,7 @@ The main commands used in git are following:
 6. <strong>Monitoring</strong>: Continuous monitoring in the production environment
 
 
-##test procedure
+## test procedure
 
 ### Software Testing
 - Black Box Testing
